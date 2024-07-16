@@ -31,7 +31,7 @@ export function apStyleTitleCase(value, options) {
 
   const stop = configuration.stopwords || defaults
   const keep = configuration.keepSpaces
-  const splitter = /(\s+|[-‑–—,:;!?()])/
+  const splitter = /(\s+|[-‑–—,:;!?()\/])/
 
   return value
     .split(splitter)
